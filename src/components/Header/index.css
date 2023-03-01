@@ -1,0 +1,12 @@
+.header {
+  /* background-color: #8d0085; */
+  background-color: black;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+.header p {
+  margin-left: 15%;
+  font-size: xx-large;
+  color: white;
+}

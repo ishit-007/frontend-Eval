@@ -1,0 +1,8 @@
+.cards-container {
+    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10%;
+  width: 60%;
+  margin-left: 20%;
+}
