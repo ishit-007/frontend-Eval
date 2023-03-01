@@ -19,17 +19,13 @@ const Card = ({ props }) => {
         <img src={props.imgUrl} alt="" />
       </div>
 
-      <div className="content" style={{backgroundColor:appTheme}}>
+      <div className="content" style={{ backgroundColor: appTheme }}>
         <h3>{props.name.toUpperCase()}</h3>
         <p className="description">{props.description}</p>
         <p className="venue">Venue:{props.venue}</p>
         <div className="timestamp">
           <p className="date">Date:{new Date(props.datetime).toLocaleDateString()}</p>
           <p className="time">Time:{new Date(props.datetime).toLocaleTimeString()}</p>
-        </div>
-        <div className="options"></div>
-        <div className="icons">
-          <i className="fa-solid fa-bookmark"></i>
         </div>
       </div>
     </div>

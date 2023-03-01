@@ -55,8 +55,14 @@ exports[`Single Card should render the Single Card Component 1`] = `
       >
         <button
           className="register"
+          style={
+            Object {
+              "color": undefined,
+              "fontWeight": 600,
+            }
+          }
         >
-          Register
+          REGISTER
         </button>
       </div>
     </div>

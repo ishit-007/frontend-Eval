@@ -4,6 +4,7 @@
   height: 10vh;
   display: flex;
   align-items: center;
+  font-family: 'Big Shoulders Display';
 }
 .header p {
   margin-left: 15%;

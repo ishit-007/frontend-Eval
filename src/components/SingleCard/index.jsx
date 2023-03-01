@@ -33,7 +33,9 @@ const SingleCard = () => {
           </div>
           <div className="options"></div>
           <div className="register-unregister">
-            <button className="register">Register</button>
+            <button className="register" style={{ color: appTheme, fontWeight: 600}}>
+              REGISTER
+            </button>
           </div>
         </div>
       </div>
