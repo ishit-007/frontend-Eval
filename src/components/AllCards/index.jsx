@@ -4,6 +4,7 @@ import './index.css';
 import React from 'react';
 import Card from '../Card';
 import Search from '../Search';
+import Filter from '../Filter';
 
 import { makeRequest, BACKEND_URL, GET_EVENTS_DATA } from '../../util/makeRequest';
 
@@ -31,6 +32,7 @@ const AllCards = props => {
     <>
       <div className="all-Cards">
         <Search searchedText={searchedText} setSearchedText={setSearchedText} />
+        <Filter></Filter>
       </div>
       <div className="cards-container">
         {events.map(event => {

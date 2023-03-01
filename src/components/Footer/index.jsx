@@ -6,6 +6,7 @@ import { makeRequest, GET_THEMES_DATA } from '../../util/makeRequest';
 import { ThemeContext } from '../../contexts/ThemeContext';
 
 const Footer = () => {
+  const saveThemeHandler = () => {};
   const { appTheme, changeTheme } = useContext(ThemeContext);
   const [themes, setThemes] = React.useState([]);
   React.useEffect(() => {
@@ -37,7 +38,9 @@ const Footer = () => {
         })}
       </div>
 
-      <button>SAVE THEME</button>
+      <button style={{ color: appTheme }} onClick={saveThemeHandler}>
+        SAVE THEME
+      </button>
     </div>
   );
 };
