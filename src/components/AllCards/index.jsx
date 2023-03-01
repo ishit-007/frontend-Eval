@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import './index.css';
 import React from 'react';
@@ -6,7 +7,10 @@ import Search from '../Search';
 
 import { makeRequest, BACKEND_URL, GET_EVENTS_DATA } from '../../util/makeRequest';
 
-const AllCards = () => {
+const AllCards = props => {
+  {
+    console.log(props.colorSelected);
+  }
   const [searchedText, setSearchedText] = React.useState('');
   const [matchingEvents, setMatchingEvents] = React.useState([]);
   const [events, setEvents] = React.useState([]);

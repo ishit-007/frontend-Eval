@@ -4,12 +4,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { useNavigate } from 'react-router-dom';
+import { ThemeContext } from '../../contexts/ThemeContext';
 
 const Card = ({ props }) => {
   const navigate = useNavigate();
+  const { appTheme } = React.useContext(ThemeContext);
   return (
     <div
       className="card"
+      style={{ backgroundColor: appTheme }}
       onClick={() => {
         navigate(`/event/${props.id}`);
       }}>
@@ -17,7 +20,7 @@ const Card = ({ props }) => {
         <img src={props.imgUrl} alt="" />
       </div>
 
-      <div className="content">
+      <div className="content" style={{backgroundColor:appTheme}}>
         <h3>{props.name.toUpperCase()}</h3>
         <p className="description">{props.description}</p>
         <p className="venue">Venue:{props.venue}</p>

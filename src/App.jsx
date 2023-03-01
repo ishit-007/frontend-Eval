@@ -1,9 +1,12 @@
+/* eslint-disable no-unused-vars */
 import './App.css';
 
-import React from 'react';
+import React, { useContext } from 'react';
 import { Header, AllCards, SingleCard, Footer } from './components';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+// import { ThemeContext } from './contexts/ThemeContext';
 
 function App() {
   return (
