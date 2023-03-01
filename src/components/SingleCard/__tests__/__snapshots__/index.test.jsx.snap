@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NavBar should render the Single Card Component 1`] = `
+exports[`Single Card should render the Single Card Component 1`] = `
 <div
   className="card-container"
 >
@@ -16,6 +16,11 @@ exports[`NavBar should render the Single Card Component 1`] = `
     </div>
     <div
       className="content"
+      style={
+        Object {
+          "backgroundColor": undefined,
+        }
+      }
     >
       <h3 />
       <p
@@ -45,6 +50,15 @@ exports[`NavBar should render the Single Card Component 1`] = `
       <div
         className="options"
       />
+      <div
+        className="register-unregister"
+      >
+        <button
+          className="register"
+        >
+          Register
+        </button>
+      </div>
     </div>
   </div>
 </div>

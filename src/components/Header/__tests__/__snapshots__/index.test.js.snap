@@ -1,8 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NavBar should render the NavBar component 1`] = `
+exports[`Header should render the Header component 1`] = `
 <div
   className="header"
+  style={
+    Object {
+      "backgroundColor": undefined,
+    }
+  }
 >
   <p>
     EVENTIFY

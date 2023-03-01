@@ -1,16 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NavBar should render the Search Component 1`] = `
+exports[`Search should render the Search Component 1`] = `
 <div
   className="search"
 >
   <input
     onChange={[Function]}
     placeholder="EVENT NAME"
+    style={
+      Object {
+        "borderColor": undefined,
+      }
+    }
     type="text"
   />
   <i
     className="fa fa-search"
+    style={
+      Object {
+        "fil": undefined,
+      }
+    }
   />
 </div>
 `;

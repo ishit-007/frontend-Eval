@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AllCards should render the AllCards component 1`] = `
+Array [
+  <div
+    className="all-Cards"
+  >
+    <div
+      className="search"
+    >
+      <input
+        onChange={[Function]}
+        placeholder="EVENT NAME"
+        style={
+          Object {
+            "borderColor": undefined,
+          }
+        }
+        type="text"
+      />
+      <i
+        className="fa fa-search"
+        style={
+          Object {
+            "fil": undefined,
+          }
+        }
+      />
+    </div>
+    <div
+      className="checkbox-filter-container"
+    >
+      <input
+        id="all"
+        name="all"
+        onChange={[Function]}
+        type="checkbox"
+        value="all"
+      />
+      <label>
+        All
+      </label>
+      <br />
+      <input
+        id="register"
+        name="register"
+        onChange={[Function]}
+        type="checkbox"
+        value="register"
+      />
+      <label>
+        Registered
+      </label>
+      <br />
+      <input
+        id="Bookmark"
+        name="Bookmarked"
+        onChange={[Function]}
+        type="checkbox"
+        value="Bookmarked"
+      />
+      <label>
+        Bookmarked
+      </label>
+      <br />
+      <input
+        id="available"
+        name="available"
+        onChange={[Function]}
+        type="checkbox"
+        value="available"
+      />
+      <label>
+        Seats Available
+      </label>
+    </div>
+  </div>,
+  <div
+    className="cards-container"
+  />,
+]
+`;

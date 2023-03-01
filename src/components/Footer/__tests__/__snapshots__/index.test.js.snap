@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NavBar should render the Footer component 1`] = `
+exports[`Footer should render the Footer component 1`] = `
 <div
   className="footer"
   style={

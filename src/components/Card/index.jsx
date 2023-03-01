@@ -12,7 +12,6 @@ const Card = ({ props }) => {
   return (
     <div
       className="card"
-      style={{ backgroundColor: appTheme }}
       onClick={() => {
         navigate(`/event/${props.id}`);
       }}>
