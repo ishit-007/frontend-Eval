@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavBar should render the Single Card Component 1`] = `
+<div
+  className="card-container"
+>
+  <div
+    className="single-card"
+  >
+    <div
+      className="image"
+    >
+      <img
+        alt=""
+      />
+    </div>
+    <div
+      className="content"
+    >
+      <h3 />
+      <p
+        className="description"
+      />
+      <p
+        className="venue"
+      >
+        Venue:
+      </p>
+      <div
+        className="timestamp"
+      >
+        <p
+          className="date"
+        >
+          Date:
+          Invalid Date
+        </p>
+        <p
+          className="time"
+        >
+          Time:
+          Invalid Date
+        </p>
+      </div>
+      <div
+        className="options"
+      />
+    </div>
+  </div>
+</div>
+`;
