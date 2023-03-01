@@ -11,6 +11,10 @@ img {
   display: flex;
   justify-content: space-between;
 }
+.content h3 {
+  text-align: center;
+  font-family: 'Big Shoulders Display';
+}
 .content {
   display: flex;
   flex-direction: column;

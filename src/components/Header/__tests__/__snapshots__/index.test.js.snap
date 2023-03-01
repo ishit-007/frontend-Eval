@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavBar should render the NavBar component 1`] = `
+<div
+  className="header"
+>
+  <p>
+    EVENTIFY
+  </p>
+  <i
+    className="fa-solid fa-magnifying-glass"
+  />
+</div>
+`;

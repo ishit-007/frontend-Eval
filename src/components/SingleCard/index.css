@@ -1,0 +1,46 @@
+.single-card {
+  width: 600px;
+  height: 1000px;
+  margin-top: 20px;
+}
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.single-card img {
+  height: 600px;
+  width: 600px;
+}
+.single-card .timestamp {
+  display: flex;
+  justify-content: space-between;
+}
+.single-card .content h3 {
+  text-align: center;
+  font-family: 'Big Shoulders Display';
+}
+.single-card .content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 200px;
+  padding: 5px;
+  color: white;
+  background-color: black;
+  border-radius: 0 0 10px 10px;
+}
+.single-card .description {
+  height: 100px;
+  overflow: auto;
+}
+.single-card .venue {
+  padding-top: 5px;
+  font-weight: 800;
+  height: 60px;
+}
+.single-card .date,
+.single-card .timestamp {
+  font-weight: 800;
+  height: 30px;
+}

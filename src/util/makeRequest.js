@@ -9,6 +9,10 @@ export const GET_EVENTS_DATA = {
   method: 'GET',
   url: 'api/events'
 };
+export const GET_EVENT_BY_ID = (Id) => ({
+  method: 'GET',
+  url: `api/events/${Id}`
+});
 
 // export const GET_LIKES_DATA = (Id) => ({
 //   method: 'GET',
