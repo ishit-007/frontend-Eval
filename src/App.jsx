@@ -1,7 +1,7 @@
 import './App.css';
 
 import React from 'react';
-import { Header, AllCards,SingleCard } from './components';
+import { Header, AllCards, SingleCard, Footer } from './components';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -12,9 +12,10 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<AllCards />} />
-          <Route path='/event/:id' element={<SingleCard/>}></Route>
+          <Route path="/event/:id" element={<SingleCard />}></Route>
         </Routes>
       </BrowserRouter>
+      <Footer />
     </div>
   );
 }

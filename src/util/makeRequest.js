@@ -14,16 +14,10 @@ export const GET_EVENT_BY_ID = (Id) => ({
   url: `api/events/${Id}`
 });
 
-// export const GET_LIKES_DATA = (Id) => ({
-//   method: 'GET',
-//   url: `api/records/${Id}/likes`
-// });
-
-// export const UPDATE_LIKES_DATA = (Id) => ({
-//   method: 'PATCH',
-//   url: `api/records/${Id}/likes`
-// });
-
+export const GET_THEMES_DATA = {
+  method: 'GET',
+  url: 'api/themes'
+};
 export const makeRequest = async (apiEndpoint, dynamicConfig = {}, navigate) => {
   try {
     const config = {

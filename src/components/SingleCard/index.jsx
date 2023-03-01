@@ -30,6 +30,9 @@ const SingleCard = () => {
             <p className="time">Time:{new Date(card.datetime).toLocaleTimeString()}</p>
           </div>
           <div className="options"></div>
+          <div className="register-unregister">
+            <button className="register">Register</button>
+          </div>
         </div>
       </div>
     </div>

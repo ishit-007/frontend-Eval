@@ -26,6 +26,9 @@ const Card = ({ props }) => {
           <p className="time">Time:{new Date(props.datetime).toLocaleTimeString()}</p>
         </div>
         <div className="options"></div>
+        <div className="icons">
+          <i className="fa-solid fa-bookmark"></i>
+        </div>
       </div>
     </div>
   );
