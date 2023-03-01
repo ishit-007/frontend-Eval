@@ -28,51 +28,73 @@ Array [
       />
     </div>
     <div
-      className="checkbox-filter-container"
+      className="filter"
+      style={
+        Object {
+          "color": undefined,
+        }
+      }
     >
-      <input
-        id="all"
-        name="all"
-        onChange={[Function]}
-        type="checkbox"
-        value="all"
-      />
-      <label>
-        All
-      </label>
-      <br />
-      <input
-        id="register"
-        name="register"
-        onChange={[Function]}
-        type="checkbox"
-        value="register"
-      />
-      <label>
-        Registered
-      </label>
-      <br />
-      <input
-        id="Bookmark"
-        name="Bookmarked"
-        onChange={[Function]}
-        type="checkbox"
-        value="Bookmarked"
-      />
-      <label>
-        Bookmarked
-      </label>
-      <br />
-      <input
-        id="available"
-        name="available"
-        onChange={[Function]}
-        type="checkbox"
-        value="available"
-      />
-      <label>
-        Seats Available
-      </label>
+      <div
+        className="option"
+      >
+        <input
+          checked={false}
+          id="all"
+          onChange={[Function]}
+          onClick={[Function]}
+          type="radio"
+          value="all"
+        />
+        <label>
+          ALL
+        </label>
+      </div>
+      <div
+        className="option"
+      >
+        <input
+          checked={false}
+          id="registered"
+          onChange={[Function]}
+          onClick={[Function]}
+          type="radio"
+          value="registered"
+        />
+        <label>
+          REGISTERED
+        </label>
+      </div>
+      <div
+        className="option"
+      >
+        <input
+          checked={false}
+          id="bookmarked"
+          onChange={[Function]}
+          onClick={[Function]}
+          type="radio"
+          value="bookmarked"
+        />
+        <label>
+          BOOKMARKED
+        </label>
+      </div>
+      <div
+        className="option"
+      >
+        <input
+          checked={false}
+          id="available"
+          onChange={[Function]}
+          onClick={[Function]}
+          type="radio"
+          value="available"
+        />
+        <label>
+          SEATS AVAILABLE
+        </label>
+      </div>
     </div>
   </div>,
   <div

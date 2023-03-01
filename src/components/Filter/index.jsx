@@ -1,101 +1,100 @@
 import './index.css';
 import React from 'react';
+import { ThemeContext } from '../../contexts/ThemeContext';
 
 const Filter = () => {
-  const [filter, setFilter] = React.useState([]);
-  console.log(filter);
-  const searchHandler = event => {
-    if (event.target.checked) {
-      setFilter(...filter, event.target.value);
-    } else {
-      setFilter(filter.filter(item => item !== event.target.value));
-    }
-    event.target.checked = !event.target.checked;
-  };
+  const [display, setDisplay] = React.useState(true);
+  const { appTheme } = React.useContext(ThemeContext);
+  const [filter, setFilter] = React.useState();
+
   return (
-    // <div className="filter">
-    //   <div className="option">
-    //     <input
-    //       type="radio"
-    //       id="all"
-    //       value="all"
-    //       onClick={radioButtonClickHandler}
-    //       checked={filter === 'all'}
-    //       onChange={event => {
-    //         if (event.checked) {
-    //           setFilter(event.target.value);
-    //         } else {
-    //           setFilter('all');
-    //         }
-    //       }}
-    //     />
-    //     <label>All</label>
-    //   </div>
-    //   <div className="option">
-    //     <input
-    //       type="radio"
-    //       id="registered"
-    //       value="registered"
-    //       onClick={radioButtonClickHandler}
-    //       checked={filter === 'registered'}
-    //       onChange={event => {
-    //         if (event.checked) {
-    //           setFilter(event.target.value);
-    //         } else {
-    //           setFilter('all');
-    //         }
-    //       }}
-    //     />
-    //     <label>Registered</label>
-    //   </div>
-    //   <div className="option">
-    //     <input
-    //       type="radio"
-    //       id="bookmarked"
-    //       value="bookmarked"
-    //       onClick={radioButtonClickHandler}
-    //       checked={filter === 'bookmarked'}
-    //       onChange={event => {
-    //         if (event.checked) {
-    //           setFilter(event.target.value);
-    //         } else {
-    //           setFilter('all');
-    //         }
-    //       }}
-    //     />
-    //     <label>Bookmarked</label>
-    //   </div>
-    //   <div className="option">
-    //     <input
-    //       type="radio"
-    //       id="available"
-    //       value="available"
-    //       onClick={radioButtonClickHandler}
-    //       checked={filter === 'available'}
-    //       onChange={event => {
-    //         if (event.checked) {
-    //           setFilter(event.target.value);
-    //         } else {
-    //           setFilter('all');
-    //         }
-    //       }}
-    //     />
-    //     <label>Seats Available</label>
-    //   </div>
-    // </div>
-    <div className="checkbox-filter-container">
-      <input type="checkbox" id="all" name="all" value="all" onChange={searchHandler} />
-      <label>All</label>
-      <br />
-      <input type="checkbox" id="register" name="register" value="register" onChange={searchHandler} />
-      <label>Registered</label>
-      <br />
-      <input type="checkbox" id="Bookmark" name="Bookmarked" value="Bookmarked" onChange={searchHandler} />
-      <label>Bookmarked</label>
-      <br />
-      <input type="checkbox" id="available" name="available" value="available" onChange={searchHandler} />
-      <label>Seats Available</label>
-    </div>
+    <>
+      <h1
+        style={{ textAlign: 'center' }}
+        onClick={() => {
+          if (display === 'none') {
+            setDisplay('flex');
+          } else {
+            setDisplay('none');
+          }
+        }}>
+        FILTER
+      </h1>
+      <div className="filter" style={{ color: appTheme, display: display }}>
+        <div className="option">
+          <input
+            style={{ accentColor: appTheme, border: `4px solid ${appTheme}` }}
+            type="radio"
+            id="all"
+            value="all"
+            // onClick={}
+            checked={filter === 'all'}
+            onChange={event => {
+              if (!event.checked) {
+                setFilter(event.target.value);
+              } else {
+                setFilter('all');
+              }
+            }}
+          />
+          <label>ALL</label>
+        </div>
+        <div className="option">
+          <input
+            style={{ accentColor: appTheme, border: `4px solid ${appTheme}` }}
+            type="radio"
+            id="registered"
+            value="registered"
+            // onClick={}
+            checked={filter === 'registered'}
+            onChange={event => {
+              if (!event.checked) {
+                setFilter(event.target.value);
+              } else {
+                setFilter('all');
+              }
+            }}
+          />
+          <label>REGISTERED</label>
+        </div>
+        <div className="option">
+          <input
+            style={{ accentColor: appTheme, border: `4px solid ${appTheme}` }}
+            type="radio"
+            id="bookmarked"
+            value="bookmarked"
+            // onClick={}
+            checked={filter === 'bookmarked'}
+            onChange={event => {
+              if (!event.checked) {
+                setFilter(event.target.value);
+              } else {
+                setFilter('all');
+              }
+            }}
+          />
+          <label>BOOKMARKED</label>
+        </div>
+        <div className="option">
+          <input
+            style={{ accentColor: appTheme, border: `4px solid ${appTheme}` }}
+            type="radio"
+            id="available"
+            value="available"
+            // onClick={}
+            checked={filter === 'available'}
+            onChange={event => {
+              if (!event.checked) {
+                setFilter(event.target.value);
+              } else {
+                setFilter('all');
+              }
+            }}
+          />
+          <label>SEATS AVAILABLE</label>
+        </div>
+      </div>
+    </>
   );
 };
 

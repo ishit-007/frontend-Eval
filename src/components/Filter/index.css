@@ -1,11 +1,20 @@
-/* .filter {
+.filter {
+  margin-left: 10%;
+  width: 80%;
+  align-content: space-around;
   display: flex;
   flex-direction: column;
+  height: 100px;
+  gap:50px;
+  flex-wrap: wrap;
 }
 .option {
   display: flex;
-} */
+}
 .filter input{
-    height: 30px;
-    width: 30px;
+  display: contents;
+  margin-right: 5px;
+  margin-top: 5px;
+    height: 10px;
+    width: 10px;
 }
