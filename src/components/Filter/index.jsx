@@ -5,7 +5,7 @@ import { ThemeContext } from '../../contexts/ThemeContext';
 const Filter = () => {
   const [display, setDisplay] = React.useState(true);
   const { appTheme } = React.useContext(ThemeContext);
-  const [filter, setFilter] = React.useState();
+  const [filter, setFilter] = React.useState('');
 
   return (
     <>
@@ -23,11 +23,10 @@ const Filter = () => {
       <div className="filter" style={{ color: appTheme, display: display }}>
         <div className="option">
           <input
-            style={{ accentColor: appTheme, border: `4px solid ${appTheme}` }}
+            style={{ accentColor: appTheme }}
             type="radio"
             id="all"
             value="all"
-            // onClick={}
             checked={filter === 'all'}
             onChange={event => {
               if (!event.checked) {
@@ -41,7 +40,7 @@ const Filter = () => {
         </div>
         <div className="option">
           <input
-            style={{ accentColor: appTheme, border: `4px solid ${appTheme}` }}
+            style={{ accentColor: appTheme }}
             type="radio"
             id="registered"
             value="registered"
@@ -59,7 +58,7 @@ const Filter = () => {
         </div>
         <div className="option">
           <input
-            style={{ accentColor: appTheme, border: `4px solid ${appTheme}` }}
+            style={{ accentColor: appTheme }}
             type="radio"
             id="bookmarked"
             value="bookmarked"
@@ -77,7 +76,7 @@ const Filter = () => {
         </div>
         <div className="option">
           <input
-            style={{ accentColor: appTheme, border: `4px solid ${appTheme}` }}
+            style={{ accentColor: appTheme }}
             type="radio"
             id="available"
             value="available"
